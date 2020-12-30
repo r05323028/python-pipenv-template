@@ -1,0 +1,12 @@
+{
+    "project_name": "My python project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "version": "0.1.0",
+    "author": "seanchang",
+    "email": "seanchang@kklab.com",
+    "github_page": "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_slug}}",
+    "python_version": "3.6.10",
+    "year": "{% now 'utc', '%Y' %}",
+    "license": ["MIT", "Apache Software License 2.0"],
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
